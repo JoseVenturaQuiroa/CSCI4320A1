@@ -36,7 +36,7 @@ public class Person1 {
 	  }
 	  int i = 2 % input.length();
    	  String newName = input.substring(i) + input.substring(0, i);
-	  return newName
+	  return newName;
 	}
 	
 	/**
