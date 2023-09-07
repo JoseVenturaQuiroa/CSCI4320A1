@@ -5,7 +5,7 @@ package edu.clayton.csit.antlab.person;
  *  returns their name and a
  *  modified string 
  *  
- *  @author Qu
+ *  @author Jose
  *  @version 1.1
  */
 public class Person1 {
@@ -31,7 +31,12 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  return null;
+	  if (input == null || input.isEmpty()) {
+	    return input;
+	  }
+	  int i = 2 % input.length();
+   	  String newName = input.substring(i) + input.substring(0, i);
+	  return newName
 	}
 	
 	/**
